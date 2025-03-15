@@ -14,19 +14,11 @@ const Dashboard = () => {
         name: city,
         value: cityData[city],
     }));
-
-    const barData = [
-        { name: '1990', citizens: 1000 },
-        { name: '2000', citizens: 1500 },
-        { name: '2010', citizens: 2000 },
-        { name: '2020', citizens: 2500 },
-        { name: '2023', citizens: citizens.length }, 
-    ];
-
+    
     return (
         <div>
             <h1>Панель управления</h1>
-            <h2>Распределение граждан по городам</h2>
+            <h2>Распределение сотрудников по городам</h2>
             <ResponsiveContainer width="100%" height={300}>
                 <PieChart>
                     <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={100} fill="#8884d8" label>
