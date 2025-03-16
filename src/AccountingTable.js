@@ -7,7 +7,7 @@ const AccountingTable = () => {
     return (
         <div>
             <h1>Учётные записи</h1>
-            <table>
+            <table class="glass-table">
                 <thead>
                     <tr>
                         <th>ФИО</th>
@@ -15,6 +15,7 @@ const AccountingTable = () => {
                         <th>Email</th>
                         <th>Телефон</th>
                         <th>Город</th>
+                        <th>Доход</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,6 +26,7 @@ const AccountingTable = () => {
                             <td>{item.email}</td>
                             <td>{item.phone}</td>
                             <td>{item.city}</td>
+                            <td>{item.income} ₽</td>
                         </tr>
                     ))}
                 </tbody>

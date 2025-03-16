@@ -20,13 +20,6 @@ function App() {
                 </div>
             </Router>
         </DataProvider>
-        // <DataProvider>
-        //     <div className="App">
-        //         <Dashboard />
-        //         <AccountingTable />
-        //         <HelpDesk />
-        //     </div>
-        // </DataProvider>
     );
 }
 

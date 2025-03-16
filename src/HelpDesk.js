@@ -78,10 +78,9 @@ const HelpDesk = () => {
                 {editingRequest && <button onClick={() => setEditingRequest(null)}>Отменить</button>}
             </form>
 
-            {/* Отображение информации о выбранном гражданине */}
             <CitizenInfo citizen={selectedCitizen} />
 
-            <table>
+            <table class="glass-table">
                 <thead>
                     <tr>
                         <th>ID Заявки</th>
