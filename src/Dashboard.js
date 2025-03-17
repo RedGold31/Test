@@ -33,7 +33,7 @@ const Dashboard = () => {
         <div>
             <h1>Панель информации</h1>
             <h2>Распределение сотрудников по городам</h2>
-            <ResponsiveContainer width="100%" height={300}>
+            <ResponsiveContainer width="95%" height={300}>
                 <PieChart>
                     <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={100} fill="#8884d8" label>
                         {pieData.map((entry, index) => (
@@ -45,21 +45,21 @@ const Dashboard = () => {
             </ResponsiveContainer>
                 <div className="metrics-grid">
                     <div className="metric-card">
-                    <FiUsers size={30} />
-                    <h3>Всего граждан:</h3>
-                    <p>{totalCitizens}</p>
+                        <FiUsers size={30} />
+                        <h3>Всего граждан:</h3>
+                        <p>{totalCitizens}</p>
+                    </div>
+                    <div className="metric-card">
+                        <FiDollarSign size={30} />
+                        <h3>Средний доход:</h3>
+                        <p>{averageIncome.toFixed(2)} ₽</p>
+                    </div>
+                    <div className="metric-card">
+                        <FiMapPin size={30} />
+                        <h3>Средний возраст:</h3>
+                        <p>{averageAge.toFixed(1)} лет</p>
+                    </div>
                 </div>
-                <div className="metric-card">
-                    <FiDollarSign size={30} />
-                    <h3>Средний доход:</h3>
-                    <p>{averageIncome.toFixed(2)} ₽</p>
-                </div>
-                <div className="metric-card">
-                    <FiMapPin size={30} />
-                    <h3>Средний возраст:</h3>
-                    <p>{averageAge.toFixed(1)} лет</p>
-                </div>
-            </div>
         </div>
     );
 };

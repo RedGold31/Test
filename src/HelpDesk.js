@@ -15,6 +15,17 @@ const HelpDesk = () => {
     const [editingRequest, setEditingRequest] = useState(null);
     const [newRequest, setNewRequest] = useState({ citizenId: '', request: '', status: 'В обработке' });
     const [selectedCitizen, setSelectedCitizen] = useState(null);
+    const totalRequests = requests.length;
+
+    // Наименее popular статус
+    const statusCounts = {};
+    requests.forEach(request => {
+        statusCounts[request.status] = (statusCounts[request.status] || 0) + 1;
+    });
+    
+    const mostCommonStatus = Object.entries(statusCounts).reduce(
+        (a, b) => a[1] > b[1] ? a : b
+    )[0];
 
     // Фильтрация граждан по имени
     const filteredCitizens = citizens.filter(citizen => 
@@ -43,14 +54,29 @@ const HelpDesk = () => {
     return (
         <div>
             <h1>Картотека заявок</h1>
-            <input
-                type="text"
-                placeholder="Фильтр по ФИО"
-                value={filter}
-                onChange={(e) => setFilter(e.target.value)}
-            />
-            <h2>Всего граждан: {filteredCitizens.length}</h2>
-
+            <div class="filter">   
+                <input
+                    type="text"
+                    placeholder="Фильтр по ФИО"
+                    value={filter}
+                    onChange={(e) => setFilter(e.target.value)}
+                />
+            </div> 
+            <h2></h2>
+            <div className="metrics-grid">
+                <div className="metric-card">
+                    <h3>Всего граждан</h3>
+                    <p>{filteredCitizens.length}</p>
+                </div>
+                <div className="metric-card">
+                    <h3>Общее количество заявок</h3>
+                    <p>{totalRequests}</p>
+                </div>
+                <div className="metric-card">
+                    <h3>Наиболее популярный статус</h3>
+                    <p>{mostCommonStatus}</p>
+                </div>
+            </div>
             <h2>{editingRequest ? 'Редактировать заявку' : 'Добавить заявку'}</h2>
             <form onSubmit={(e) => { e.preventDefault(); handleAddOrUpdateRequest(); }}>
                 <select
