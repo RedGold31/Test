@@ -1,23 +1,47 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaFolder, FaFile, FaChartLine } from 'react-icons/fa';
 import './Navbar.css';
 
-const Navbar = () => {
+const Sidebar = () => {
+  const { pathname } = window.location; 
+
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
-        <li className="navbar-item">
-          <Link to="/" className="navbar-link">Дашборд</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/AccountingTable" className="navbar-link">Учетные записи</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/HelpDesk" className="navbar-link">Картотека заявок</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="sidebar">
+      <h1 className="sidebar-header">Управление заявками</h1>
+      <nav className="navbar">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <Link 
+              to="/" 
+              className={pathname === '/' ? 'nav-link active' : 'nav-link'}
+            >
+              <FaFolder className="nav-icon" />
+              Картотека заявок
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link 
+              to="/AccountingTable" 
+              className={pathname === '/AccountingTable' ? 'nav-link active' : 'nav-link'}
+            >
+              <FaFile className="nav-icon" />
+              Учетные записи
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link 
+              to="/DashBoard" 
+              className={pathname === '/DashBoard' ? 'nav-link active' : 'nav-link'}
+            >
+              <FaChartLine className="nav-icon" />
+              Дашборд
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
-export default Navbar;
+export default Sidebar;

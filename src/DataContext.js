@@ -37,7 +37,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1988-03-22",
       email: "kuznetsov@example.com",
       phone: "+7 (999) 444-55-66",
-      city: "Казань",
+      city: "Москва",
       income: 123000,
     },
     {
@@ -46,7 +46,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1995-07-12",
       email: "smirnova@example.com",
       phone: "+7 (999) 555-66-77",
-      city: "Нижний Новгород",
+      city: "Москва",
       income: 133000,
     },
     {
@@ -55,7 +55,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1983-11-05",
       email: "popov@example.com",
       phone: "+7 (999) 666-77-88",
-      city: "Челябинск",
+      city: "Екатеринбург",
       income: 100000,
     },
     {
@@ -64,7 +64,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1991-02-18",
       email: "morozova@example.com",
       phone: "+7 (999) 777-88-99",
-      city: "Ростов-на-Дону",
+      city: "Екатеринбург",
       income: 70000,
     },
     {
@@ -73,7 +73,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1980-09-25",
       email: "fedorov@example.com",
       phone: "+7 (999) 888-99-00",
-      city: "Уфа",
+      city: "Москва",
       income: 320000,
     },
     {
@@ -82,7 +82,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1987-04-14",
       email: "solovyev@example.com",
       phone: "+7 (999) 999-00-11",
-      city: "Волгоград",
+      city: "Москва",
       income: 200000,
     },
     {
@@ -91,7 +91,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1993-06-30",
       email: "vasilieva@example.com",
       phone: "+7 (999) 101-12-13",
-      city: "Красноярск",
+      city: "Екатеринбург",
       income: 100000,
     },
     {
@@ -100,7 +100,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1986-12-20",
       email: "kovalev@example.com",
       phone: "+7 (999) 202-13-14",
-      city: "Воронеж",
+      city: "Москва",
       income: 104000,
     },
     {
@@ -109,7 +109,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1994-08-11",
       email: "lebedeva@example.com",
       phone: "+7 (999) 303-14-15",
-      city: "Пермь",
+      city: "Москва",
       income: 103000,
     },
     {
@@ -118,7 +118,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1989-01-29",
       email: "grigoryev@example.com",
       phone: "+7 (999) 404-15-16",
-      city: "Тюмень",
+      city: "Москва",
       income: 105000,
     },
     {
@@ -127,7 +127,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1992-03-03",
       email: "tikhonov@example.com",
       phone: "+7 (999) 505-16-17",
-      city: "Саратов",
+      city: "Москва",
       income: 144000,
     },
     {
@@ -136,7 +136,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1996-05-17",
       email: "semenova@example.com",
       phone: "+7 (999) 606-17-18",
-      city: "Калуга",
+      city: "Москва",
       income: 100000,
     },
     {
@@ -145,7 +145,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1984-10-10",
       email: "klimov@example.com",
       phone: "+7 (999) 707-18-19",
-      city: "Тула",
+      city: "Екатеринбург",
       income: 123000,
     },
     {
@@ -154,7 +154,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1990-02-22",
       email: "zaitseva@example.com",
       phone: "+7 (999) 808-19-20",
-      city: "Ярославль",
+      city: "Екатеринбург",
       income: 230000,
     },
     {
@@ -163,7 +163,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1988-07-07",
       email: "borisov@example.com",
       phone: "+7 (999) 909-20-21",
-      city: "Ижевск",
+      city: "Екатеринбург",
       income: 100000,
     },
     {
@@ -172,7 +172,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1993-11-15",
       email: "kostina@example.com",
       phone: "+7 (999) 101-21-22",
-      city: "Барнаул",
+      city: "Сочи",
       income: 70000,
     },
     {
@@ -217,7 +217,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1990-05-15",
       email: "kuznetsova@example.com",
       phone: "+7 (333) 444-55-66",
-      city: "Казань",
+      city: "Санкт-Петербург",
       income: 130000,
     },
     {
@@ -235,7 +235,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1992-01-10",
       email: "pavlova@example.com",
       phone: "+7 (444) 555-66-77",
-      city: "Ростов-на-Дону",
+      city: "Санкт-Петербург",
       income: 100000,
     },
     {
@@ -244,7 +244,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1989-07-28",
       email: "andreeva@example.com",
       phone: "+7 (666) 777-88-99",
-      city: "Красноярск",
+      city: "Санкт-Петербург",
       income: 120000,
     },
     {
@@ -253,7 +253,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1981-03-18",
       email: "mikhailov@example.com",
       phone: "+7 (888) 999-00-11",
-      city: "Пермь",
+      city: "Санкт-Петербург",
       income: 132000,
     },
     {
@@ -262,7 +262,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1994-10-05",
       email: "sokolova@example.com",
       phone: "+7 (999) 111-22-33",
-      city: "Воронеж",
+      city: "Санкт-Петербург",
       income: 90000,
     },
     {
@@ -271,7 +271,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1988-06-22",
       email: "vasilyeva@example.com",
       phone: "+7 (222) 333-44-55",
-      city: "Нижний Новгород",
+      city: "Сочи",
       income: 90000,
     },
     {
@@ -280,7 +280,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1996-04-17",
       email: "gordeeva@example.com",
       phone: "+7 (555) 666-77-88",
-      city: "Калининград",
+      city: "Санкт-Петербург",
       income: 100000,
     },
     {
@@ -289,7 +289,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1983-12-08",
       email: "romanov@example.com",
       phone: "+7 (777) 888-99-00",
-      city: "Ижевск",
+      city: "Сочи",
       income: 100000,
     },
     {
@@ -298,7 +298,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1991-09-15",
       email: "kovalyova@example.com",
       phone: "+7 (999) 000-11-22",
-      city: "Томск",
+      city: "Сочи",
       income: 70000,
     },
     {
@@ -307,7 +307,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1986-02-20",
       email: "solovyeva@example.com",
       phone: "+7 (333) 444-55-66",
-      city: "Тюмень",
+      city: "Сочи",
       income: 75000,
     },
     {
@@ -325,7 +325,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1984-08-25",
       email: "gavrilova@example.com",
       phone: "+7 (888) 999-00-11",
-      city: "Самара",
+      city: "Уфа",
       income: 80000,
     },
     {
@@ -334,7 +334,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1990-06-01",
       email: "egorova@example.com",
       phone: "+7 (444) 555-66-77",
-      city: "Омск",
+      city: "Уфа",
       income: 90000,
     },
     {
@@ -343,7 +343,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1988-04-28",
       email: "dmitrieva@example.com",
       phone: "+7 (999) 111-22-33",
-      city: "Челябинск",
+      city: "Уфа",
       income: 100000,
     },
     {
@@ -352,7 +352,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1992-10-18",
       email: "ilina@example.com",
       phone: "+7 (777) 888-99-00",
-      city: "Рязань",
+      city: "Москва",
       income: 130000,
     },
     {
@@ -361,7 +361,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1985-03-15",
       email: "kuznetsov@example.com",
       phone: "+7 (666) 777-88-99",
-      city: "Пенза",
+      city: "Москва",
       income: 70000,
     },
     {
@@ -370,7 +370,7 @@ export const DataProvider = ({ children }) => {
       birthDate: "1991-09-22",
       email: "pavlov@example.com",
       phone: "+7 (888) 999-00-11",
-      city: "Саратов",
+      city: "Москва",
       income: 60000,
     },
   ]);

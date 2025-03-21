@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #00b8935b;
 }
 
 code {
@@ -13,7 +14,8 @@ code {
 }
 
 h1, h2 {
-  text-align: center;
+  text-align: left;
+  margin-left: 5%;
 }
 
 div {
@@ -45,8 +47,13 @@ input {
   border-radius: 4px;
 }
 
+.main-route{
+  margin-left: 35vh;
+}
+
 .filter {
-  text-align: center;
+  text-align: left;
+  margin-left: 4%;
 }
 
 .citizen-info {
@@ -57,12 +64,29 @@ input {
   background-color: #f9f9f9;
 }
 
+.glass-table-dashboard {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  background: rgba(255, 255, 255, 0.808);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glass-table-dashboard td {
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .glass-table {
   width: 100%;
   border-collapse: collapse;
   margin: 25px 0;
   font-family: 'Arial', sans-serif;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.808);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -95,14 +119,12 @@ input {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid black;
-  border-radius: 50px;
 }
 
 .metric-card {
   background: #f8f9fa;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 30px;
   text-align: center;
 }
 
@@ -127,4 +149,17 @@ input {
   background: #f8f9fa;
   padding: 1.5rem;
   border-radius: 10px;
+}
+
+.right-form{
+  text-align: right;
+} 
+
+.metric-card-dashboard {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
 }

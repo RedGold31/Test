@@ -61,8 +61,7 @@ const HelpDesk = () => {
                     value={filter}
                     onChange={(e) => setFilter(e.target.value)}
                 />
-            </div> 
-            <h2></h2>
+            </div>
             <div className="metrics-grid">
                 <div className="metric-card">
                     <h3>Всего граждан</h3>
@@ -77,32 +76,34 @@ const HelpDesk = () => {
                     <p>{mostCommonStatus}</p>
                 </div>
             </div>
-            <h2>{editingRequest ? 'Редактировать заявку' : 'Добавить заявку'}</h2>
-            <form onSubmit={(e) => { e.preventDefault(); handleAddOrUpdateRequest(); }}>
-                <select
-                    value={newRequest.citizenId}
-                    onChange={(e) => {
-                        const selectedId = e.target.value;
-                        setNewRequest({ ...newRequest, citizenId: selectedId });
-                        setSelectedCitizen(citizens.find(c => c.id === parseInt(selectedId)));
-                    }}
-                    required
-                >
-                    <option value="">Выберите гражданина</option>
-                    {citizens.map(citizen => (
-                        <option key={citizen.id} value={citizen.id}>{citizen.fullName}</option>
-                    ))}
-                </select>
-                <input
-                    type="text"
-                    placeholder="Запрос"
-                    value={newRequest.request}
-                    onChange={(e) => setNewRequest({ ...newRequest, request: e.target.value })}
-                    required
-                />
-                <button type="submit">{editingRequest ? 'Обновить' : 'Добавить'}</button>
-                {editingRequest && <button onClick={() => setEditingRequest(null)}>Отменить</button>}
-            </form>
+            <div class="right-form">
+                <h3>{editingRequest ? 'Редактировать заявку' : 'Добавить заявку'}</h3>
+                    <form onSubmit={(e) => { e.preventDefault(); handleAddOrUpdateRequest(); }}>
+                        <select
+                            value={newRequest.citizenId}
+                            onChange={(e) => {
+                                const selectedId = e.target.value;
+                                setNewRequest({ ...newRequest, citizenId: selectedId });
+                                setSelectedCitizen(citizens.find(c => c.id === parseInt(selectedId)));
+                            }}
+                            required
+                        >
+                            <option value="">Выберите гражданина</option>
+                            {citizens.map(citizen => (
+                                <option key={citizen.id} value={citizen.id}>{citizen.fullName}</option>
+                            ))}
+                        </select>
+                        <input
+                            type="text"
+                            placeholder="Запрос"
+                            value={newRequest.request}
+                            onChange={(e) => setNewRequest({ ...newRequest, request: e.target.value })}
+                            required
+                        />
+                        <button type="submit">{editingRequest ? 'Обновить' : 'Добавить'}</button>
+                        {editingRequest && <button onClick={() => setEditingRequest(null)}>Отменить</button>}
+                    </form>
+            </div>
 
             <CitizenInfo citizen={selectedCitizen} />
 

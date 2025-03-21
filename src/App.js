@@ -10,13 +10,15 @@ function App() {
     return (
         <DataProvider>
             <Router>
-                <div className="App">
-                    <Navbar />
-                    <Routes>
-                        <Route path="/" element={<Dashboard />} />
-                        <Route path="/AccountingTable" element={<AccountingTable />} />
-                        <Route path="/HelpDesk" element={<HelpDesk />} />
-                    </Routes>
+                <div>
+                <Navbar />
+                    <div class="main-route">
+                        <Routes>
+                            <Route path="/" element={<HelpDesk />} />
+                            <Route path="/AccountingTable" element={<AccountingTable />} />
+                            <Route path="/Dashboard" element={<Dashboard />} />
+                        </Routes>
+                    </div>
                 </div>
             </Router>
         </DataProvider>
